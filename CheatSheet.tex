@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Math Midterm Cheat Sheet}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Formulas}
+
+\subsection*{Second Order Differential Equations (DE)}
+
+\begin{tabular}{|p{5cm}|p{10cm}|}
+\hline
+Formula & Description \\
+\hline
+$ay'' + by' + cy = 0$ & Second order linear homogeneous DE \\
+\hline
+$r = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a}$ & Formula to determine 'r' \\
+\hline
+$y = C_1e^{r_1x} + C_2e^{r_2x}$ & General solution if $r1$ and $r2$ two simple zeros of the characteristic eq\\
+\hline
+$y = (A + Bx)Ce^{r_1x}$ & General solution if $r1 = r2 = r$ is a double zero of the characteristic eq (multiplicity 2)\\   
+\hline
+$y = e^{rx}(A\cos(\omega x) + B\sin(\omega x))$ & General solution If $r1 = \alpha + i\omega and r2 = \alpha - i\omega (with \alpha, \omega \in \mathbb{R})$ are the complex
+zeros of the characteristic equation\\
+\hline
+\end{tabular}
+
+\subsection*{Guidelines for finding a particular solution}
+\begin{itemize}
+    \item If f (t) is a polynomial in t, and r = 0 is not a solution of the
+    characteristic polynomial, then try for yp(t) a polynomial in t of
+    the same degree as f . If r = 0 is a solution of the characteristic
+    equation, then try for yp(t) a polynomial of degree deg(f ) + 1,
+    if r = 0 is a zero of multiplicity 1, and a polynomial of degree
+    deg(f ) + 2 if r = 0 is a zero of multiplicity 2.
+    \item If f (t) is of the form
+    $f (t) = \alpha sin(\omega_0t) + \beta cos(\omega_0t)$,
+    and $\pm i\omega_0$ are not the zeros of the characteristic equation, then
+    try
+    $yp(t) = A sin(\omega_0t) + B cos(\omega_0t)$
+    as particular solution. If $\pm i\omega_0$ are the zeros of the characteristic
+    equation, then try
+    $yp(t) = At sin(\omega_0t) + Bt cos(\omega_0t)$
+    as particular solution
+    \item If f (t) is of the form
+    $f (t) = p(t) * e^{\alpha t}$,
+    with p(t) a polynomial in t, and if $\alpha$ is not a zero of the
+    characteristic equation, then try
+    $yp(t) = q(t) * e^{\alpha t}$
+    as particular solution, with q(t) a polynomial in t of the same
+    degree as p(t). If $\alpha$ is a zero of the characteristic polynomial of
+    multiplicity k, then try
+    $yp(t) = q(t) * t^{k} * e^{\alpha t}$
+    as particular solution, with q(t) a polynomial in t, with
+    deg(q) = deg(p).
+    
+\end{itemize}
+
+\end{document}
