@@ -1,0 +1,31 @@
+\section{Week 2}
+\subsection{Vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$}
+
+Addition:
+$\vec{a} + \vec{b} = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} + \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} = \begin{bmatrix} a_1 + b_1 \\ a_2 + b_2 \end{bmatrix}$
+\newline
+Scaler/multiplication: 
+$\alpha * \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} = \begin{bmatrix} \alpha * a_1 \\ \alpha * a_2 \end{bmatrix}$
+
+\subsection{Parametric description}
+$\begin{bmatrix} x \\ y \\ z\end{bmatrix} = \begin{bmatrix} a \\ b \\c\end{bmatrix} + \lambda \begin{bmatrix} d \\ e \\ f \end{bmatrix} + \mu \begin{bmatrix} g \\ h \\ i\end{bmatrix}$
+\newline
+The vector containing \textit{a, b and c} is the \textbf{supporting vector} and the vectors containing \textit{d, e, f} and \textit{g, h, i} are the \textbf{directional vectors}.
+\newline
+\underline{Example:}
+\newline
+Let the following points P(2,2, 0), Q(6, 0, 1) and R(3, 3, 1) be given. Find the parametric description of the plane containing P, Q and R.
+\newline
+\textbf{Solution:}
+\newline
+1. Determine supporting vector: $\vec{OP} = \begin{bmatrix} 2 \\ 2 \\ 0 \end{bmatrix}$
+\newline
+2. Determine directional vectors: 
+\newline
+$\vec{PQ} = \vec{OQ} - \vec{OP} = \begin{bmatrix} 6 - 2 \\ 0 - 2 \\ 1 - 0 \end{bmatrix} = \begin{bmatrix} 4 \\ -2 \\ 1 \end{bmatrix}$
+\newline
+$\vec{PR} = \vec{OR} - \vec{OP} = \begin{bmatrix} 3 - 2 \\ 3 - 2 \\ 1 - 0 \end{bmatrix} = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$
+\newline
+3. Parametric description:
+\newline
+$\begin{bmatrix} x \\ y \\ z\end{bmatrix} = \begin{bmatrix} 2 \\ 2 \\ 0\end{bmatrix} + \lambda \begin{bmatrix} 4 \\ -2 \\ 1 \end{bmatrix} + \mu \begin{bmatrix} 1 \\ 1 \\ 1\end{bmatrix}$
