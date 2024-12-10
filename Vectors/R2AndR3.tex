@@ -1,18 +1,47 @@
 \section{Week 2}
 \subsection{Vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$}
 
-Addition:
-$\vec{a} + \vec{b} = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} + \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} = \begin{bmatrix} a_1 + b_1 \\ a_2 + b_2 \end{bmatrix}$
+\subsubsection{Addition:}
+$\underline{a} = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} \in \mathbb{R}^2$ and $\underline{b} = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} \in \mathbb{R}^2 $
 \newline
-Scaler/multiplication: 
+$\underline{a} + \underline{b} = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} + \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} = \begin{bmatrix} a_1 + b_1 \\ a_2 + b_2 \end{bmatrix}$
+
+\subsubsection{Scaler/multiplication:} 
+$\underline{a} \in \mathbb{R}^2$ and $\alpha \in \mathbb{R}$
+\newline
 $\alpha * \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} = \begin{bmatrix} \alpha * a_1 \\ \alpha * a_2 \end{bmatrix}$
 
+\subsubsection{Cross products:}
+$\underline{a} = \begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \in \mathbb{R}^3$ and $\underline{b} = \begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix} \in \mathbb{R}^3 $
+\newline
+$\underline{a} \times \underline{b} = \begin{bmatrix} a_2 * b_3 - a_3 * b_2 \\ a_3 * b_1 - a_1 * b_3 \\ a_1 * b_2 - a_2 * b_1 \end{bmatrix}$
+
+\subsubsection{Inner product $\mathbb{R}^2$:}
+$\underline{u} = \begin{bmatrix} u_1 \\ u_2 \end{bmatrix} \in \mathbb{R}^2$ and $\underline{v} = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} \in \mathbb{R}^2 $
+\newline
+$(\underline{u} , \underline{v}) = u_1 * v_1 + u_2 * v_2$
+
+\subsubsection{Inner product $\mathbb{R}^3$:}
+$\underline{u} = \begin{bmatrix} u_1 \\ u_2 \\ u_3 \end{bmatrix} \in \mathbb{R}^3$ and $\underline{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix} \in \mathbb{R}^3 $
+\newline
+$(\underline{u} , \underline{v}) = u_1 * v_1 + u_2 * v_2 + u_3 * v_3$
+
+\subsubsection{Geometric definition:}
+$\underline{a} = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix} \in \mathbb{R}^2$ and $\underline{b} = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix} \in \mathbb{R}^2 $
+\newline
+$(\underline{a}, \underline{b}) = ||\underline{a}|| * ||\underline{b}|| * cos(\theta)$
+\newline
+$||\underline{a}|| = \sqrt{(\underline{a}, \underline{a})}$
+\newline
+Where $\theta$ is the angle between the two vectors.
+
+\newpage
 \subsection{Parametric description}
 $\begin{bmatrix} x \\ y \\ z\end{bmatrix} = \begin{bmatrix} a \\ b \\c\end{bmatrix} + \lambda \begin{bmatrix} d \\ e \\ f \end{bmatrix} + \mu \begin{bmatrix} g \\ h \\ i\end{bmatrix}$
 \newline
 The vector containing \textit{a, b and c} is the \textbf{supporting vector} and the vectors containing \textit{d, e, f} and \textit{g, h, i} are the \textbf{directional vectors}.
 \newline
-\underline{Example:}
+\textbf{Example:}
 \newline
 Let the following points P(2,2, 0), Q(6, 0, 1) and R(3, 3, 1) be given. Find the parametric description of the plane containing P, Q and R.
 \newline
@@ -29,3 +58,59 @@ $\vec{PR} = \vec{OR} - \vec{OP} = \begin{bmatrix} 3 - 2 \\ 3 - 2 \\ 1 - 0 \end{b
 3. Parametric description:
 \newline
 $\begin{bmatrix} x \\ y \\ z\end{bmatrix} = \begin{bmatrix} 2 \\ 2 \\ 0\end{bmatrix} + \lambda \begin{bmatrix} 4 \\ -2 \\ 1 \end{bmatrix} + \mu \begin{bmatrix} 1 \\ 1 \\ 1\end{bmatrix}$
+\newpage
+\textbf{Example:}
+\newline
+Let the following points P(1, 1, 0), Q(2, 3, -1) and R(5, 0, 1) be given. Find the parametric description of the plane containing P, Q and R. Find the line \textit{l} through S(6, -12, -16) perpendicular to V. Calculate the distance from S to V.
+\newline
+\textbf{Solution:}
+\newline
+1. Determine parametric description of the plane containing P, Q and R:
+\newline
+$\vec{OP} = \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}$, 
+$\vec{PQ} = \begin{bmatrix} 2 - 1 \\ 3 - 1 \\ -1 - 0 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}$,
+$\vec{PR} = \begin{bmatrix} 5 - 1 \\ 0 - 1 \\ 1 - 0 \end{bmatrix} = \begin{bmatrix} 4 \\ -1 \\ 1 \end{bmatrix}$
+\newline
+Parametric description: of V: 
+$\begin{bmatrix} x \\ y \\ z\end{bmatrix} = \begin{bmatrix} 1 \\ 1 \\ 0\end{bmatrix} + \lambda \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix} + \mu \begin{bmatrix} 4 \\ -1 \\ 1\end{bmatrix}$, ($\lambda, \mu \in \mathbb{R})$
+\newline
+2. Determine the normal vector of the plane:
+\newline
+$\vec{n} = \vec{PQ} \times \vec{PR} = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix} \times \begin{bmatrix} 4 \\ -1 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ -5 \\ -9 \end{bmatrix}$
+\newline
+3. Determine equation of the plane V:
+\newline
+x - 5y - 9z = d
+\newline
+4. Determine d:
+\newline
+$(\vec{OP}, \vec{n}) = 1 * 1 + 1 * -5 + 0 * -9 = 1 - 5 = -4$, so the equation of the plane is:
+x-5y-9z = -4
+\newline
+5. Determine the line \textit{l} through S(6, -12, -16) perpendicular to V:
+\newline
+$\begin{bmatrix} x \\ y \\ z\end{bmatrix} = \begin{bmatrix} 6 \\ -12 \\ -16\end{bmatrix} + \lambda \begin{bmatrix} 1 \\ -5 \\ -9 \end{bmatrix} = \begin{bmatrix} 6 + \lambda \\ -12 - 5\lambda \\ -16 - 9\lambda \end{bmatrix}$
+\newline
+6. Determine point of intersection of \textit{l} and V:
+\newline
+x - 5y - 9z = -4
+\newline
+$(6 + \lambda) - 5(-12 - 5\lambda) - 9(-16 - 9\lambda) = -4$
+\newline
+$6 + \lambda + 60 + 25\lambda + 144 + 81\lambda = -4$
+\newline
+$210 + 107\lambda = -4$
+\newline
+$\lambda = -\frac{214}{107} = -2$
+\newline
+7. Determine the point of intersection:
+\newline
+$\begin{bmatrix} x \\ y \\ z\end{bmatrix} = \begin{bmatrix} 6 \\ -12 \\ -16\end{bmatrix} + -2 \begin{bmatrix} 1 \\ -5 \\ -9 \end{bmatrix} = \begin{bmatrix} 6 - 2 \\ -12 + 10 \\ -16 + 18 \end{bmatrix} = \begin{bmatrix} 4 \\ -2 \\ 2 \end{bmatrix}$
+\newline
+8. Determine the distance from S to V:
+\newline
+$||\begin{bmatrix} 6 \\ -12 \\ -16 \end{bmatrix} - \begin{bmatrix} 4 \\ -2 \\ 2 \end{bmatrix}|| = ||\begin{bmatrix} 2 \\ -10 \\ -18 \end{bmatrix}|| = \sqrt{2^2 + (-10)^2 + (-18)^2} = \sqrt{4 + 100 + 324} = \sqrt{428} = 2\sqrt{107}$
+\newline
+\textbf{Conclusion:}
+\newline
+The distance from S to V is $2\sqrt{107}$
